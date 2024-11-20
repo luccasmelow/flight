@@ -1,0 +1,55 @@
+{
+    "flights": [
+      {
+        "id": "1",
+        "nome": "Voo São Paulo - Rio de Janeiro",
+        "origin": "São Paulo",
+        "destination": "Rio de Janeiro",
+        "date": "2024-12-01",
+        "price": "350"
+      },
+      {
+        "id": "2",
+        "nome": "Voo Brasília - Salvador",
+        "origin": "Brasília",
+        "destination": "Salvador",
+        "date": "2024-12-02",
+        "price": "450"
+      },
+      {
+        "id": "3",
+        "nome": "Voo Porto Alegre - Recife",
+        "origin": "Porto Alegre",
+        "destination": "Recife",
+        "date": "2024-12-03",
+        "price": "500"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "1",
+        "flightId": "1",
+        "userId": "1",
+        "namePassenger": "João Silva",
+        "seat": "12A",
+        "statu": "reservado"
+      },
+      {
+        "id": "2",
+        "flightId": "2",
+        "userId": "1",
+        "namePassenger": "Maria Oliveira",
+        "seat": "14B",
+        "statu": "confirmado"
+      },
+      {
+        "id": "3",
+        "flightId": "3",
+        "userId": "2",
+        "namePassenger": "Carlos Santos",
+        "seat": "10C",
+        "statu": "confirmado"
+      }
+    ]
+  }
+  

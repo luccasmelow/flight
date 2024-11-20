@@ -1,31 +1,36 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Image, SafeAreaView } from 'react-native';
+import { Bell } from 'lucide-react-native';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 
 export default function Search() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/two.tsx" />
+    <View className='flex-1'>
+      <SafeAreaView className='h-20 flex-row justify-between m-6'>
+        <View className="flex-row gap-4 items-center justify-center">
+          <Image
+            className="h-11 w-11 rounded-full"
+            source={{
+              uri: 'https://github.com/luccasmelow.png',
+            }}
+          />
+          <Text className="font-medium text-lg text-center">
+            Hi, Jack
+          </Text>
+        </View>
+
+        <Bell color='black' size={22}/>
+
+      </SafeAreaView>
+      
+      <View className=' m-6'>
+        <Text className="font-medium text-3xl text-left">
+          Where are you going?
+        </Text>
+
+      </View>
+     
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
